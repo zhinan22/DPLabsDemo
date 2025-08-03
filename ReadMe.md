@@ -2,7 +2,7 @@
 
 ## 基本信息
 
-开发语言 go 
+开发语言 go
 
 版本 1.24.3
 
@@ -51,23 +51,61 @@ Solana sdk : github.com/gagliardetto/solana-go v1.13.0
      按时间先后排序
 
 7. **PnL 计算**
-   - 详情见 Pnl_cal_logic.md
 
    - 基于汇总的Order
 
-   列表，按持仓平均成本法计算盈亏（PnL）：
+     列表，按持仓平均成本法计算盈亏（PnL）：
 
-   - 统计买入 / 卖出数量、成本与收入
-   - 计算已实现盈亏、未实现盈亏及盈亏百分比
+     - 统计买入 / 卖出数量、成本与收入
+     - 计算已实现盈亏、未实现盈亏及盈亏百分比
 
 8. **结果返回**
 
    - 将计算完成的 PnL 结果返回给用户
 
-- 本地启动
+本地启动
+go mod tidt
+go run main.go
+curl "<http://localhost:8080/pnl?userAddress=DxhVG5CzS5GHWkpZKtnGYYAsmUbE7FgdYbMYK6FGQ8hP&tokenMint=6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN&limit=10>"
 
-- go mod tidy
+## 发布新版流程
 
-- go run main.go
+### 版本号
 
-- curl "http://localhost:8080/pnl?userAddress=DxhVG5CzS5GHWkpZKtnGYYAsmUbE7FgdYbMYK6FGQ8hP&tokenMint=6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN&limit=10"
+我要发布新版版本号必须以v开头
+示例：`v1.2.3`
+
+### 创建发布版本
+
+1. 创建新版本标签：
+
+   ```bash
+   git tag v1.0.0
+   git push origin v1.0.0
+   ```
+
+2. 自动化的CI流程
+   - 创建新版本后，CI流程会自动构建并发布新版本镜像
+   - 镜像版本号与标签保持一致
+
+## 使用Docker Compose升级
+
+### 升级步骤
+
+1. 拉取最新镜像：
+
+   ```bash
+   docker compose pull
+   ```
+
+2. 启动新版本服务：
+
+   ```bash
+   docker compose up -d
+   ```
+
+### 验证升级
+
+```bash
+docker compose logs -f
+```
