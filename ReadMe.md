@@ -51,7 +51,7 @@ Solana sdk : github.com/gagliardetto/solana-go v1.13.0
      按时间先后排序
 
 7. **PnL 计算**
-
+   - 详情请见 Pnl_cal_logic.md
    - 基于汇总的Order
 
      列表，按持仓平均成本法计算盈亏（PnL）：
