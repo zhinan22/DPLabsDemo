@@ -10,6 +10,10 @@
 
 Solana sdk : github.com/gagliardetto/solana-go v1.13.0
 
+rpc节点 ：quicknode
+
+行情 : okx market api
+
 ## 逻辑
 
 用户交易 PnL 计算流程
