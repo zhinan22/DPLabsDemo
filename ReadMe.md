@@ -63,10 +63,10 @@ Solana sdk : github.com/gagliardetto/solana-go v1.13.0
 
    - 将计算完成的 PnL 结果返回给用户
 
-本地启动
-go mod tidt
-go run main.go
-curl "<http://localhost:8080/pnl?userAddress=DxhVG5CzS5GHWkpZKtnGYYAsmUbE7FgdYbMYK6FGQ8hP&tokenMint=6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN&limit=10>"
+- 本地启动
+- go mod tidy
+- go run main.go
+- curl "http://localhost:8080/pnl?userAddress=DxhVG5CzS5GHWkpZKtnGYYAsmUbE7FgdYbMYK6FGQ8hP&tokenMint=6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN&limit=10"
 
 ## 发布新版流程
 
