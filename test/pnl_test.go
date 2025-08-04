@@ -56,7 +56,7 @@ func Test_Pnl(t *testing.T) {
 	q := req.URL.Query()
 	q.Add("userAddress", "DxhVG5CzS5GHWkpZKtnGYYAsmUbE7FgdYbMYK6FGQ8hP")
 	q.Add("tokenMint", "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN")
-	q.Add("limit", "10") // 非数字的limit
+	q.Add("limit", "30") // 非数字的limit
 	req.URL.RawQuery = q.Encode()
 
 	w := httptest.NewRecorder()

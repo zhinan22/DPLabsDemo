@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7bcceade-abdb-4c9e-84cc-fbd7291cae51" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/.env" beforeDir="false" afterPath="$PROJECT_DIR$/test/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/pnl_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/pnl_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +56,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
-    &quot;Go Build.go build github.com/zhinan22/DPLabsDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build github.com/zhinan22/DPLabsDemo.executor&quot;: &quot;Debug&quot;,
     &quot;Go Test.Test_Pnl in github.com/zhinan22/DPLabsDemo/test.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -82,7 +85,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.Test_Pnl in github.com/zhinan22/DPLabsDemo/test">
+  <component name="RunManager" selected="Go Build.go build github.com/zhinan22/DPLabsDemo">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
       <option name="appServicePlanName" />
@@ -165,9 +168,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build github.com/zhinan22/DPLabsDemo" />
         <item itemvalue="Go Test.Test_Pnl in github.com/zhinan22/DPLabsDemo/test" />
         <item itemvalue="Go Build.go build pnltest.go" />
-        <item itemvalue="Go Build.go build github.com/zhinan22/DPLabsDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +193,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1754104600478</updated>
-      <workItem from="1754104601802" duration="46501000" />
+      <workItem from="1754104601802" duration="48301000" />
     </task>
     <servers />
   </component>
@@ -202,6 +205,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/services/solana_services.go</url>
+          <line>50</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
