@@ -70,7 +70,7 @@ rpc节点 ：quicknode
 - 本地启动
 - go mod tidy
 - go run main.go
-- curl "http://localhost:8080/pnl?userAddress=DxhVG5CzS5GHWkpZKtnGYYAsmUbE7FgdYbMYK6FGQ8hP&tokenMint=6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN&limit=10"
+- curl "http://localhost:8080/pnl?userAddress=DxhVG5CzS5GHWkpZKtnGYYAsmUbE7FgdYbMYK6FGQ8hP&tokenMint=6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN&limit=30"
 
 ## 发布新版流程
 
